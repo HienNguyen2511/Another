@@ -1,0 +1,41 @@
+<div class="loginForm">
+  <div class="container">
+    <form class="content" [formGroup]="loginForm" (ngSubmit)="login()">
+
+      <h3 class="text-center text-primary mt-2 mb-4"> Login </h3>
+
+      <!--      email-->
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" formControlName="email" class="form-control" placeholder="Email " id="inputEmail"
+               aria-describedby="emailHelp">
+        <!--        required-->
+        <div *ngIf="email.invalid&&(email.touched||email.dirty)">
+          <span class="error" *ngIf="email.errors?.required">*Email is required</span>
+          <span class="error" *ngIf="email.errors?.email">*Enter Valid Email Address</span>
+        </div>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <!--      password-->
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" formControlName="password" class="form-control" placeholder="Password"
+               id="inputPassword">
+        <div *ngIf="password.invalid&&(password.touched||password.dirty)">
+          <span class="error" *ngIf="password.errors?.required">*Password is required</span>
+        </div>
+      </div>
+
+      <!--      forget password-->
+      &nbsp;&nbsp; <a href="" class="form-text">Forget password?</a>
+
+      <!--      submit-->
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary col-lg-12 col-12 mt-2 mb-3" [disabled]="loginForm.invalid">Login
+        </button>
+      </div>
+      <a routerLink="/signup" class="form-text">New User? Click to Signup!</a>
+    </form>
+  </div>
+</div>

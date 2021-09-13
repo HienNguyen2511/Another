@@ -1,0 +1,137 @@
+.headLine {
+  padding-top: 20px;
+  background-color: #FFE7D3;
+  margin: 0 -15px;
+}
+
+h4 {
+  padding: 2px;
+  padding-left: 20px;
+}
+
+marquee {
+  padding: 5px 0;
+}
+
+.headLine > a {
+  padding-left: 20px;
+}
+
+.box {
+  padding: 10px 10px;
+  background-color: rgb(248, 248, 248);
+}
+
+.box a {
+  font-size: 14px;
+}
+
+.box h5 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 640px) and (min-width: 600px) {
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .headLine > a {
+    font-size: 18px;
+  }
+
+  .row {
+    width: 92%;
+    margin: 4% auto;
+  }
+}
+
+@media screen and (width: 540px) {
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .box > a {
+    font-size: 12px;
+  }
+
+  .row {
+    width: 92%;
+    margin: 4% auto;
+  }
+
+
+}
+
+@media screen and (width: 414px)  {
+
+  h4 {
+    font-size: 13px;
+  }
+
+  .headLine > a {
+    font-size: 8px;
+  }
+
+  .row {
+    width: 92%;
+    margin: 4% auto;
+  }
+
+}
+
+@media screen and (width: 800px) {
+
+  .row {
+    width: 90%;
+    margin: 4% auto;
+  }
+
+  .headLine >a {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (width: 768px) {
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .headLine > a {
+    font-size: 20px;
+  }
+
+  .row {
+    width: 90%;
+    margin: 4% auto;
+  }
+
+
+}
+
+@media screen and (width: 1024px) {
+
+  h4 {
+    font-size: 35px;
+  }
+
+  .headLine > a {
+    font-size: 28px;
+  }
+
+  .row {
+    width: 90%;
+    margin: auto;
+  }
+
+
+}
+
+@media screen and (min-width: 414px){
+  h4 {
+    text-align: center;
+  }
+}

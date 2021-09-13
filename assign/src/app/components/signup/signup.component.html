@@ -1,0 +1,60 @@
+<div class="signupForm">
+  <div class="container">
+    <form class="content" [formGroup]="signupForm" (ngSubmit)="signUp()">
+
+      <h3 class="text-center text-primary mt-2 mb-4">Sign Up</h3>
+
+      <!--        firstName-->
+      <div class="mb-3">
+        <label for="inputFirstName">First Name</label>
+        <input type="text" formControlName="firstName" class="form-control" placeholder="First Name"
+               id="inputFirstName">
+        <!--      required-->
+        <div *ngIf="firstname.invalid&&(firstname.touched || firstname.dirty)">
+          <span class="error" *ngIf="firstname.errors?.required">*First Name is required</span>
+          <span class="error" *ngIf="firstname.errors?.pattern">*Only characters</span>
+        </div>
+      </div>
+
+      <!--        lastName-->
+      <div class="mb-3">
+        <label for="inputLastName">Last Name</label>
+        <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name" id="inputLastName">
+        <!--      required-->
+        <div *ngIf="lastname.invalid&&(lastname.touched || lastname.dirty)">
+          <span class="error" *ngIf="lastname.errors?.required">*Last Name is required</span>
+          <span class="error" *ngIf="lastname.errors?.pattern">*Only characters</span>
+        </div>
+      </div>
+
+      <!--        email-->
+      <div class="mb-3">
+        <label for="inputEmail">Email Address</label>
+        <input type="email" formControlName="email" class="form-control" placeholder="Email" id="inputEmail">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <!--      required-->
+        <div *ngIf="email.invalid&&(email.touched || email.dirty)">
+          <span class="error" *ngIf="email.errors?.required">*Email is required</span>
+          <span class="error" *ngIf="email.errors?.email">*Enter Valid Email Address</span>
+        </div>
+      </div>
+
+      <!--        phoneNumber-->
+      <div class="mb-3">
+        <label for="inputPhoneNumber">PhoneNumber</label>
+        <input type="text" formControlName="phone" class="form-control" placeholder="Phone" id="inputPhoneNumber">
+        <!--      required-->
+        <div *ngIf="phoneNumber.invalid&&(phoneNumber.touched || phoneNumber.dirty)">
+          <span class="error" *ngIf="phoneNumber.errors?.required">*Phone Number is required</span>
+          <span class="error" *ngIf="phoneNumber.errors?.pattern">*Only characters</span>
+        </div>
+      </div>
+
+      <!--      submit-->
+      <div class="mb-3">
+        <button class="btn btn-primary col-lg-12 col-12 mt-2 mb-3" [disabled]="signupForm.invalid">Sign Up</button>
+      </div>
+      <a routerLink="/login">Already register? Click to Login!</a>
+    </form>
+  </div>
+</div>

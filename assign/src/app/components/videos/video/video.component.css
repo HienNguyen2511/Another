@@ -1,0 +1,41 @@
+.video {
+  padding: 60px 100px;
+  height: auto;
+}
+
+.box {
+  background-color: #fff;
+  padding: 10px 12px;
+}
+
+
+.search {
+  margin-top: 20px;
+}
+
+.btn-search {
+  height: 100%;
+  background-color: #F3F4F2;
+  border: none;
+  outline: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn-search:hover {
+  background-color: #fff;
+
+}
+
+.titleVideo {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+    background-color: #eff6ff;
+    padding: 50px 10px;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container-fluid mt-5">
+
+  <div class="headLine">
+    <h4>TOP TRENDING ABOUT SCIENCE IN THE LAST 24h
+      <marquee>Welcome to Science News</marquee></h4>
+    <a href="" routerLink="/news">Back to List</a>
+
+  </div>
+  <div class="row">
+    <div *ngFor="let news of newsScience" class="col-lg-3 mt-3 mb-3">
+
+      <div class="box">
+        <img src="{{news.urlToImage}}" alt="" width="100%">
+        <h5 class="mt-2 mb-2">{{news.title}}</h5>
+        <!--      <p>{{news.description}}</p>-->
+        <a href="{{news.url}}" target="_blank" class="btn btn-primary col-lg-12 col-12 mt-2 mb-3">Read more</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,22 @@
+<section class="course">
+  <div class="container">
+    <h1 class="text-center">All Course</h1>
+
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-5" *ngFor="let course of courses">
+        <div class="box shadow-sm">
+          <img src="{{course.img}}" width="100%" alt="">
+          <h4 class="mt-2"> {{course.name}}</h4>
+          <p class="mt-2">{{course.des}}</p>
+
+          <a href="{{course.link}}">
+            <button class="btn btn-primary col-lg-12 col-12 mt-2 mb-3">Watch now</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+

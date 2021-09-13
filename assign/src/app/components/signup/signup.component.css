@@ -1,0 +1,111 @@
+.signupForm {
+  background-color: #fff;
+  width: 30%;
+  height: auto;
+  margin: 7% auto;
+  padding: 25px;
+}
+
+.error {
+  color: red;
+}
+
+
+/*Responsive*/
+@media screen and (width: 600px) and (height: 1024px) {
+  .signupForm {
+    width: 85%;
+    margin: 35% auto;
+  }
+
+  .container {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+}
+
+@media screen and (width: 800px) {
+  .signupForm {
+    width: 80%;
+    margin: 27% auto;
+  }
+
+  .container {
+    font-size: 30px;
+  }
+
+  input {
+    font-size: 25px;
+  }
+}
+
+@media screen and (width: 640px) {
+  .signupForm {
+    width: 70%;
+    margin: 20% auto;
+  }
+}
+
+@media screen and (width: 600px) and (height: 960px) {
+  .signupForm {
+    width: 85%;
+    margin: 30% auto;
+  }
+}
+
+@media screen and (width: 768px) {
+  .signupForm {
+    width: 80%;
+    margin: 15% auto;
+  }
+
+  .container {
+    font-size: 26px;
+  }
+
+  input {
+    font-size: 24px;
+  }
+}
+
+@media screen and (width: 414px) {
+  .signupForm {
+    width: 90%;
+    margin: 30% auto;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .signupForm {
+    width: 80%;
+    margin: 23% auto;
+  }
+
+  .container {
+    font-size: 35px;
+  }
+
+  input {
+    font-size: 32px;
+  }
+}
+
+@media screen and (width: 540px) {
+  .signupForm {
+    width: 85%;
+    margin: 15% auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+

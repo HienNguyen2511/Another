@@ -1,0 +1,59 @@
+.navbar {
+  background-color: #FFDAA7;
+
+  /* stick navbar on top */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  /* navbar no hidden*/
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-brand:hover {
+  color: #6D757D;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #6D757D;
+}
+
+/* Categories News */
+.subnav {
+  display: none;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+  position: absolute;
+  width: 85px;
+  margin-left: 8px;
+}
+
+.subnav li {
+  list-style: none;
+}
+
+.subnav li a {
+  color: #000;
+  display: block;
+}
+
+.subnav li a:hover {
+  color: #1e90ff;
+}
+
+.more-news:hover .subnav {
+  display: block;
+}
+
+/* Categories New End */

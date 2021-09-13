@@ -1,0 +1,26 @@
+.course {
+  padding: 60px 100px;
+  height: auto;
+}
+
+.box {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .course {
+    background-color: #eff6ff;
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1{
+    padding-top: 10%;
+  }
+}
+
+@media screen and (width: 1024px){
+
+}

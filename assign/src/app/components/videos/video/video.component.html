@@ -1,0 +1,31 @@
+<section class="video">
+  <div class="container">
+
+    <div class="search">
+
+      <div class="row row-cols-3">
+        <div class="col text-left">Search Video:</div>
+        <div class="col">
+          <input style="width: 100%" #videoName type="text" placeholder="Video" required id="videoName">
+        </div>
+        <div class="col">
+          <button class="col btn-search" (click)="getDataVideo()">Search</button>
+        </div>
+        <a class="col" href=""routerLink="/video">Search Channel?</a>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 mb-5" *ngFor="let video of videos">
+        <div class="box shadow-sm">
+          <img class="img-thumbnail" width="100%" src="{{video.snippet.thumbnails.high.url}}"/>
+          <h4 class="mt-2 titleVideo">{{video.snippet.title}}</h4>
+          <a target="_self" href="https://www.youtube.com/watch?v={{video.id.videoId}}">
+            <button class="btn btn-primary col-lg-12 col-12 mt-2 mb-3">Watch now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

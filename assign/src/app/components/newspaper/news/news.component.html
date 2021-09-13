@@ -1,0 +1,38 @@
+<div class="container-fluid mt-5 news">
+
+  <div class="row col m-auto b-color">
+    <div class="headLine col-12">
+      <h4>TOP TRENDING NEWS IN LAST 24H
+        <marquee>Welcome to News</marquee>
+      </h4>
+    </div>
+
+    <div class="row col-12 categories text-center">
+      <div class="col-12 title">Categories</div>
+
+      <!--    not optimize-->
+      <div class="col"><a class="text" href="" routerLink="/sports">Sport</a></div>
+      <div class="col"><a class="text" href="" routerLink="/business">Business</a></div>
+      <div class="col"><a class="text" href="" routerLink="/tech">Technology</a></div>
+      <div class="col"><a class="text" href="" routerLink="/health">Health</a></div>
+      <div class="col"><a class="text" href="" routerLink="/general">General</a></div>
+      <div class="col"><a class="text" href="" routerLink="/science">Science</a></div>
+      <div class="col"><a class="text" href="" routerLink="/entertainment">Entertainment</a></div>
+    </div>
+  </div>
+
+  <div class="row info">
+    <div *ngFor="let news of newsNormal" class="col-lg-3 mt-3 mb-3">
+
+      <div class="box">
+        <img src="{{news.urlToImage}}" alt="" width="100%">
+        <h5 class="mt-2 mb-2">{{news.title}}</h5>
+        <!--      <p>{{news.description}}</p>-->
+        <a href="{{news.url}}" target="_blank" class="btn btn-dark col-lg-12 col-12 mt-2 mb-3">Read more</a>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

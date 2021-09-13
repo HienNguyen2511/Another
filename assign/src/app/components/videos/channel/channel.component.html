@@ -1,0 +1,31 @@
+<section class="video">
+  <div class="container">
+
+    <div class="search">
+
+      <div class="row row-cols-3">
+        <div class="col text-left ">Search Channel Name:</div>
+        <div class="col">
+          <input style="width: 100%" #channelName type="text" placeholder="Youtube Channel" required id="channelName">
+        </div>
+        <div class="col">
+          <button class="col btn-search" (click)="getDataChannel()">Search</button>
+        </div>
+        <a class="col" href=""routerLink="/watch-video">Search Videos?</a>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 mb-5" *ngFor="let channel of channels">
+        <div class="box shadow-sm">
+          <img class="img-thumbnail" width="100%" src="{{channel.snippet.thumbnails.medium.url}}"/>
+          <h4 class="mt-2 titleChannel">{{channel.snippet.channelTitle}}</h4>
+          <a target="_self" href="https://www.youtube.com/channel/{{channel.id.channelId}}">
+            <button class="btn btn-primary col-lg-12 col-12 mt-2 mb-3">Watch now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
